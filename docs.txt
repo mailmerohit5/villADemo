@@ -1,0 +1,39 @@
+DEDICATE SOME USER TO PRODUCTS
+
+HOME | AUTHENTICATED USERS
+===================================================
+	VILA | APPARTMENT
+
+USER WILL PICK
+
+	NEW PAGE LIST OF ALL PRODUCT
+
+	DETAIL OF PRODUCT  | ALL
+
+		CUSTOMER SUPPORT THAT PRODUCT
+			ALL MEMBERS ASSOCIATED WITH
+				1.
+				2.
+			USER CAN CHAT WITH
+
+		
+USER
+
+
+
+PRODUCT TYPE : APARTMENT | VILLA
+PRODUCT TITLE: 2BHK | CHANDCHAURA GAYA
+PRODUCT IMAGE:https://cdn.pixabay.com/photo/2017/06/12/15/08/canal-2395818__340.jpg
+PRODUCT POSTED ON:--------
+AREA:
+POSSESSION:
+DESCRIPTION:
+PARKING:
+PRODUCT POSTED BY:1
+PRODUCT ASSOCIATED WITH:[1,2,3]
+
+
+
+Route::get('getUser/{id}',[\App\Http\Controllers\ApiResponseController::class,'getUser']);
+Route::post('login',[\App\Http\Controllers\ApiResponseController::class,'login']);
+Route::get('allProduct',[\App\Http\Controllers\ApiResponseController::class,'allProduct']);

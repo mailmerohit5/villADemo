@@ -1,0 +1,17 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="412" height="180" viewBox="0 0 412 180">
+  <g id="MARK" transform="translate(-62 -70)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="40" cy="40" r="40" transform="translate(110 124)" fill="#f7b10d"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(75 89)" fill="none" stroke="#449bff" stroke-width="9">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="70.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(62 125)" fill="#fff"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="30" cy="30" r="30" transform="translate(155 70)" fill="#fff"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="22.5" cy="22.5" r="22.5" transform="translate(155 205)" fill="#fff"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="25" cy="25" r="25" transform="translate(160 75)" fill="#449bff"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="15" cy="15" r="15" transform="translate(67 130)" fill="#77eb43"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="18.5" cy="18.5" r="18.5" transform="translate(159 209)" fill="#f3680b"/>
+  </g>
+  <text id="AstroTop" transform="translate(179 91)" fill="#5f5454" font-size="52" font-family="KabrioSoft-ExtraBold, Kabrio Soft" font-weight="800"><tspan x="0" y="0">AstroTop</tspan></text>
+  <text id="Astrology_on_your_fingertips" data-name="Astrology on your fingertips" transform="translate(179 122)" fill="#5f5454" font-size="20" font-family="BubblegumSans-Regular, Bubblegum Sans" letter-spacing="0.048em"><tspan x="0" y="0">Astrology on your </tspan><tspan y="0" font-family="Calibri-Bold, Calibri" font-weight="700">f</tspan><tspan y="0">ingertips</tspan></text>
+</svg>

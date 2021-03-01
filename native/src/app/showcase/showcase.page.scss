@@ -1,0 +1,64 @@
+.segLbl0Cls{  font-weight:400 !important;font-size:12px !important;font-family:Roboto !important;text-transform: unset; }.ios :host .activeTab0Cls{ --background-checked:#488aff !important; --color-checked:#ffffff !important; --color: #488aff !important; --border-color: #488aff !important;}
+.md :host .activeTab0Cls{ --color-checked:#ffffff !important; --color: #488aff !important;}
+.CustToolBar{--background:#387ef5 !important}
+.CustToolBarTitle{  font-weight:400 !important;font-size:12px !important;font-family:Roboto !important;letter-spacing:0px !important;color:#ffffff !important;}
+.CustMenuBtn{color:#ffffff !important;}
+.MallContentCls{--background:#ffffff !important; --padding-bottom: 5px !important; --padding-end: 5px !important; --padding-start: 5px !important; --padding-top: 1px !important;}
+
+/** Shopping Card Css Start**/
+
+.shop-item{
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.image-container {
+    height: 240px;
+    width: 100%;
+}
+.prod-title {
+    font-weight: 500;
+    margin-bottom: 3px;
+    text-align: left;
+    color: #000000;
+    font-size: 12px;
+    line-height: 15px;
+    // width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 0px 2px 0px;
+}
+.description {
+    white-space: normal;
+    // overflow: scroll;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-size: 9px;
+    font-weight: 400;
+    text-align: left;
+    color: #848688;
+    padding-left: 0px;
+    max-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.04em;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin: 0px 0px 2px 0px;
+}
+ .price-container {
+    text-align: left;
+    margin-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 5px 0px 2px 0px;
+}
+.p-5{padding: 5px;}
+
+/** Shopping Card Css End**/

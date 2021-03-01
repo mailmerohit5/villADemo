@@ -1,0 +1,60 @@
+<ion-app>
+  <ion-menu contentId="main-content" type="overlay" id="menuId">
+    <div style="background: url('../assets/images/bg-orange.jpg') no-repeat center center / cover;height: 200px;padding-top: 30px;" >
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+           <img src="assets/images/logo-light.svg" width="100px"/>
+          </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col size="3">
+            <ion-icon name="person-circle" style="font-size:3em;color:#ffffff"></ion-icon>
+          </ion-col>
+          <ion-col size="9" style="padding-top: 20px;">
+            <b style="text-transform: none;font-variant: small-caps;font-size:1em;color:#ffffff;">
+                Alex John
+              </b>
+          </ion-col>
+        </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-chip color="dark">
+            <ion-icon name="wallet" style="color: #fff;"></ion-icon>
+            <ion-label style="color: #fff;">2200 Rs</ion-label>
+          </ion-chip>
+          <!-- <br/>
+          <span style="color:#ffffff;font-stretch: expanded;font-size: 0.6em;">Wallet Balance</span> -->
+        </ion-col>
+        <ion-col>
+          <ion-chip color="dark">
+            <ion-icon name="people-circle-outline" style="color: #fff;"></ion-icon>
+            <ion-label style="color: #fff;">Pro</ion-label>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+    </div>
+    <ion-content>
+      <ion-list id="inbox-list">
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+            detail="false" [class.selected]="selectedIndex == i">
+            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item (click)="logout()" lines="none" detail="false">
+            <ion-icon slot="start" name="log-out-outline"></ion-icon>
+            <ion-label>Log Out</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

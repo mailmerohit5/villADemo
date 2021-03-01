@@ -1,0 +1,127 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false" style="color: #fff;"></ion-menu-button>
+      <!-- <ion-back-button></ion-back-button> -->
+    </ion-buttons>
+    <ion-title style="color: #fff;">Home</ion-title>
+    <ion-buttons slot="secondary">
+      <ion-chip color="dark" (click)='goToPage("addmoney")'>
+        <ion-icon name="wallet" style="color: #fff;"></ion-icon>
+        <ion-label style="color: #fff;">2200 Rs</ion-label>
+      </ion-chip>
+      <ion-icon name="notifications-sharp" style="font-size: 1.5em;padding-right: 10px;color: #fff;" (click)="goToPage('notification')"></ion-icon>
+      <ion-icon name="ellipsis-vertical-outline" style="font-size: 1.5em;padding-right: 10px;color: #fff;" (click)="goToPage('home')"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="HomeContentCls" [fullscreen]="true" padding>
+
+  <ion-slides pager="true">
+    <ion-slide>
+      <img src="assets/images/banner2.jpg" alt=""  />
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/images/banner1.jpg" alt="" />
+    </ion-slide>
+     <ion-slide>
+        <img src="assets/images/banner3.png" alt="" />
+    </ion-slide>
+
+  </ion-slides>
+
+ <ion-card>
+  <div class="card_bg center_img">
+    <img src="assets/images/bg-orange.jpg" class="crop_img">
+  </div>
+  <h2 style="color: #fff;">Horoscope</h2>
+  <div class="scroll_container">
+    <ion-item *ngFor="let zodiac of zodiacs" (click)="goToPage('horoscope')">
+      <div class="label" style="background: none;">
+        <img [src]="'assets/images/'+ zodiac.title + '.svg'" height="60px" width="60px"  />
+        <h3  class="ion-text-capitalize">{{zodiac.title}}</h3>
+      </div>
+    </ion-item>
+  </div>
+ </ion-card>
+  <ion-grid>
+      <ion-row>
+          <ion-col size="12">
+              <ion-row>
+                  <ion-col size="12">
+                      <ion-row>
+                          <ion-col size="6">
+                                 <div class="box" style="background-color: #F7B10D;" (click)="goToPage('chat')">
+                                  <ion-icon name="chatbubbles" style="font-size: 2.6em;"></ion-icon>
+                                  <br/>
+                                  <ion-text>Chat</ion-text>
+                                 </div>
+                          </ion-col>
+                          <ion-col size="6">
+                            <div class="box" style="background-color: #449BFF"(click)="goToPage('call')">
+                               <ion-icon  name="call" style="font-size: 2.6em;"></ion-icon>
+                               <br/>
+                                  <ion-text>Call</ion-text>
+                            </div>
+                          </ion-col>
+                      </ion-row>
+                  </ion-col>
+                  <ion-col size="12">
+                      <ion-row>
+                          <ion-col size="6">
+                            <div class="box" style="background-color: #77EB43" (click)="goToPage('showcase')">
+                                  <ion-icon  name="cart" style="font-size: 2.6em;"></ion-icon>
+                                  <br/>
+                                  <ion-text>Mall</ion-text>
+                            </div>
+                          </ion-col>
+                          <ion-col size="6">
+                            <div class="box" style="background-color:#eb445a;"(click)="goToPage('report')">
+                                  <ion-icon  name="document" style="font-size: 2.6em;"></ion-icon>
+                                  <br/>
+                                  <ion-text>Report</ion-text>
+                            </div>
+                          </ion-col>
+                      </ion-row>
+                  </ion-col>
+              </ion-row>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  <ion-card>
+    <div class="card_bg center_img">
+      <img src="assets/images/bg-welcome.jpg" class="crop_img">
+    </div>
+    <h2 style="color: #fff;">Astrology : What's New</h2>
+    <div class="scroll_container">
+      <ion-item *ngFor="let zodiac of zodiacs" (click)="goToPage('blog')">
+        <div class="label" style="background: none;">
+          <h3  class="ion-text-capitalize">Lorem's Dummy Title</h3>
+          <div class="text d-flex">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy</p>
+            <h4 class="ion-text-center" class="end">Read More</h4>
+          </div>
+          <h6>Tags | New | News</h6>
+        </div>
+      </ion-item>
+    </div>
+   </ion-card>
+  <ion-card>
+    <div style="padding: 10px;color:#2a2a2a;">
+      <img src="assets/images/logo.svg" height="100px" />
+        <p class="ion-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived not only fiv<br />e centuries, but also
+            the leap into electronic typesetting</p>
+            <div style="float: right;">--<br/><i>CEO</i></div>
+    </div>
+  </ion-card>
+  <ion-card>
+      <ion-card-content><a (click)="Openyoutube11_YouTube('DovumkH_-M8')"><img style="height: auto;"
+                  src="https://img.youtube.com/vi/DovumkH_-M8/hqdefault.jpg"></a></ion-card-content>
+  </ion-card>
+
+</ion-content>

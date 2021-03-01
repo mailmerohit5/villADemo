@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-menu-button auto-hide="false" style="color: #fff;"></ion-menu-button>
+        <!-- <ion-back-button></ion-back-button> -->
+    </ion-buttons>
+    <ion-title style="color: #fff;">Showcase</ion-title>
+    <ion-buttons slot="secondary">
+        <ion-chip color="dark" (click)='goToPage("addmoney")'>
+          <ion-icon name="wallet" style="color: #fff;"></ion-icon>
+          <ion-label style="color: #fff;">2200 Rs</ion-label>
+        </ion-chip>
+        <ion-icon name="notifications-sharp" style="font-size: 1.5em;padding-right: 10px;color: #fff;" (click)="goToPage('notification')"></ion-icon>
+        <ion-icon name="ellipsis-vertical-outline" style="font-size: 1.5em;padding-right: 10px;color: #fff;" (click)="goToPage('home')"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<ion-content class="MallContentCls" [fullscreen]="true">
+  <ion-row class="shopping-card ion-no-padding">
+    <ion-col size="6" class="shop-item ion-no-padding" *ngFor="let product of products" (click)="loadProduct(product)">
+        <div><img [src]="product.image" style="width: 100%;"/></div>
+        <div class="p-5">
+            <h4 class="prod-title">{{product.title}}</h4>
+            <p class="description">Lorem ipsum, dolor sit..</p>
+            <h4 class="price-container"><span class="text-sm icon-rupee">$</span>2999</h4>
+        </div>
+    </ion-col>
+
+</ion-row>
+</ion-content>
+
